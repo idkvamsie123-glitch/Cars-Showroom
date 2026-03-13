@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DriveX Motors</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+margin:0;
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+padding:20px;
+font-size:70px;
+color:#ff3333;
+font-weight:bold;
+
+position:relative;
+width:100%;
+z-index:100;
+
+background:rgba(0,0,0,0.7);
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+position:relative;
+overflow:hidden;
+}
+
+/* HERO VIDEO */
+
+.video-bg{
+position:absolute;   /* changed from fixed */
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+z-index:-1;
+}
+
+/* HERO TEXT */
+
+.hero h1{
+font-size:85px;
+color:red;
+margin:10px;
+animation:fadeUp 2s ease;
+text-shadow:0 0 20px black;
+}
+
+.hero p{
+font-size:60px;
+color:orangered;
+animation:fadeUp 3s ease;
+text-shadow:0 0 20px black;
+}
+
+/* BUTTON */
+
+.btn{
+margin-top:35px;
+padding:16px 45px;
+font-size:20px;
+border:none;
+background:red;
+color:white;
+cursor:pointer;
+border-radius:10px;
+transition:0.3s;
+animation:fadeUp 4s ease;
+}
+
+.btn:hover{
+background:#ff3333;
+transform:scale(1.1);
+box-shadow:0 0 20px red;
+}
+
+/* FEATURES SECTION */
+
+.features{
+position:relative;
+padding:120px 20px;
+overflow:hidden;
+}
+
+/* FEATURES VIDEO BACKGROUND */
+
+.features-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+/* FEATURES TITLE */
+
+.features h2{
+font-size:40px;
+color:red;
+margin-bottom:50px;
+text-shadow:0 0 20px black;
+animation:fadeUp 2s ease;
+}
+
+/* FEATURE CARDS */
+
+.feature{
+
+margin:25px auto;
+font-size:22px;
+color:aqua;
+max-width:420px;
+padding:20px;
+background:#0b2c6f;
+
+border:6px solid rgb(233,250,0);
+border-radius:15px;
+
+box-shadow:0 12px 25px black;
+
+transition:0.4s;
+
+animation:cardSlide 1s ease;
+}
+
+/* HOVER ANIMATION */
+
+.feature:hover{
+transform:translateY(-10px) scale(1.05);
+background:#123a8a;
+box-shadow:0 18px 35px black;
+}
+
+/* FOOTER */
+
+footer{
+padding:20px;
+background:rgba(0,0,0,0.7);
+position:relative;
+z-index:1;
+}
+
+/* TEXT ANIMATION */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* CARD ANIMATION */
+
+@keyframes cardSlide{
+from{
+opacity:0;
+transform:translateY(60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+DriveX Motors
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<video class="video-bg" autoplay muted loop>
+<source src="BMW home page video.mp4" type="video/mp4">
+</video>
+
+<h1>Drive Your Dream Car</h1>
+<p>Explore SUVs & Sedans across India</p>
+
+<a href="index1.html">
+<button class="btn">Explore Cars</button>
+</a>
+
+</section>
+
+<!-- FEATURES SECTION -->
+
+<section class="features">
+
+<video class="features-video" autoplay muted loop>
+<source src="bwm2.mp4" type="video/mp4">
+</video>
+
+<h2>Why Choose DriveX Motors?</h2>
+
+<div class="feature">🚗 50+ Premium Cars</div>
+<div class="feature">💰 Best Prices in India</div>
+<div class="feature">⚡ Fast Online Booking</div>
+<div class="feature">⭐ Trusted by Thousands</div>
+
+</section>
+
+<footer>
+© 2026 DriveX Motors
+</footer>
+
+</body>
+</html>

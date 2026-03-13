@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback - DriveX</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">DriveX Motors</div>
+</nav>
+
+<section class="feedback-section">
+
+    <!-- Background Video -->
+    <video autoplay muted loop class="bg-video">
+        <source src="bwm2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="feedback-box">
+        <h1>We Value Your Feedback</h1>
+        <p>Please let us know about your experience with DriveX.</p>
+
+        <form id="feedbackForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+           <div class="rating">
+               <label>Rating:</label>
+               <div class="rating-options">
+                   <label><input type="radio" name="rating" value="1" required> 1</label>
+                   <label><input type="radio" name="rating" value="2"> 2</label>
+                   <label><input type="radio" name="rating" value="3"> 3</label>
+                   <label><input type="radio" name="rating" value="4"> 4</label>
+                   <label><input type="radio" name="rating" value="5"> 5</label>
+               </div>
+           </div>
+
+            <textarea name="comments" placeholder="Your Comments"></textarea>
+           <a href="Feedbacksubmitted.html" class="home-btn">Submit Feedback</a>
+        </form>
+    </div>
+
+</section>
+
+<!-- Add the JS file -->
+<script src="project2.js"></script>
+
+</body>
+</html>
